@@ -1,6 +1,8 @@
 FROM openresty/openresty
 
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY lufa.conf /etc/nginx/conf.d/lufa.conf
+COPY service.conf /etc/nginx/conf.d/service.conf
 
 EXPOSE 8080
+EXPOSE 8081
